@@ -1,9 +1,10 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { Text, View } from 'react-native';
+import { styles } from '../styles/estilos';
 
 export default function SecondComponent() {
   return (
-    <View>
-      <Text>Segundo componente</Text>
+    <View style={styles.bodyComp}>
+      <Text >Segundo componente</Text>
     </View>
   );
 }

@@ -1,8 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native';
 import SecondComponent from './src/components/SecondComponent';
-import { styles } from './src/styles/StylesSheet';
+import { styles }  from './src/styles/estilos';
 import ThirdComponent from './src/components/ThirdComponent';
-import FourComponent from './src/components/FourComponents';
 
 export default function App() {
   return (
@@ -10,14 +9,13 @@ export default function App() {
       <FirstComponent />
       <SecondComponent />
       <ThirdComponent />
-      <FourComponent />
     </View>
   );
 }
 
 function FirstComponent() {
   return (
-    <View>
+    <View style={styles.headerComp}>
       <Text>Primeiro componente</Text>
     </View>
   );
